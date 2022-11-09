@@ -7,7 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		45D104EE291A97F900C15A54 /* DataBaseTeacher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45D104ED291A97F900C15A54 /* DataBaseTeacher.swift */; };
+		45D104F0291A980E00C15A54 /* DataBaseWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45D104EF291A980E00C15A54 /* DataBaseWorker.swift */; };
 		60690AB52917F83800819777 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60690AB42917F83800819777 /* main.swift */; };
+		60690ABC2918057D00819777 /* Human.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60690ABB2918057D00819777 /* Human.swift */; };
+		60690AC0291805F300819777 /* Worker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60690ABF291805F300819777 /* Worker.swift */; };
+		60690AC22918061A00819777 /* Teacher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60690AC12918061A00819777 /* Teacher.swift */; };
+		60690AC42918064100819777 /* DataBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60690AC32918064100819777 /* DataBase.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -23,8 +29,14 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		45D104ED291A97F900C15A54 /* DataBaseTeacher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataBaseTeacher.swift; sourceTree = "<group>"; };
+		45D104EF291A980E00C15A54 /* DataBaseWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataBaseWorker.swift; sourceTree = "<group>"; };
 		60690AB12917F83800819777 /* lastLesson */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = lastLesson; sourceTree = BUILT_PRODUCTS_DIR; };
 		60690AB42917F83800819777 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		60690ABB2918057D00819777 /* Human.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Human.swift; sourceTree = "<group>"; };
+		60690ABF291805F300819777 /* Worker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Worker.swift; sourceTree = "<group>"; };
+		60690AC12918061A00819777 /* Teacher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Teacher.swift; sourceTree = "<group>"; };
+		60690AC32918064100819777 /* DataBase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataBase.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,9 +69,31 @@
 		60690AB32917F83800819777 /* lastLesson */ = {
 			isa = PBXGroup;
 			children = (
+				60690ABE2918059500819777 /* Objects */,
+				60690ABD2918058B00819777 /* Humans */,
 				60690AB42917F83800819777 /* main.swift */,
 			);
 			path = lastLesson;
+			sourceTree = "<group>";
+		};
+		60690ABD2918058B00819777 /* Humans */ = {
+			isa = PBXGroup;
+			children = (
+				60690ABB2918057D00819777 /* Human.swift */,
+				60690ABF291805F300819777 /* Worker.swift */,
+				60690AC12918061A00819777 /* Teacher.swift */,
+			);
+			path = Humans;
+			sourceTree = "<group>";
+		};
+		60690ABE2918059500819777 /* Objects */ = {
+			isa = PBXGroup;
+			children = (
+				60690AC32918064100819777 /* DataBase.swift */,
+				45D104ED291A97F900C15A54 /* DataBaseTeacher.swift */,
+				45D104EF291A980E00C15A54 /* DataBaseWorker.swift */,
+			);
+			path = Objects;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -120,7 +154,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				60690AC42918064100819777 /* DataBase.swift in Sources */,
+				60690AC22918061A00819777 /* Teacher.swift in Sources */,
+				45D104F0291A980E00C15A54 /* DataBaseWorker.swift in Sources */,
 				60690AB52917F83800819777 /* main.swift in Sources */,
+				60690AC0291805F300819777 /* Worker.swift in Sources */,
+				60690ABC2918057D00819777 /* Human.swift in Sources */,
+				45D104EE291A97F900C15A54 /* DataBaseTeacher.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -244,7 +284,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = F74RB453B9;
+				DEVELOPMENT_TEAM = Z943R6TQPY;
 				ENABLE_HARDENED_RUNTIME = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -255,7 +295,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = F74RB453B9;
+				DEVELOPMENT_TEAM = Z943R6TQPY;
 				ENABLE_HARDENED_RUNTIME = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
